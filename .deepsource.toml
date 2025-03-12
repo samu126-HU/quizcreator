@@ -1,5 +1,11 @@
 version = 1
 
+test_patterns = [
+  "app/**",
+  "resources/js/pages/**",
+  "routes/**"
+]
+
 [[analyzers]]
 name = "php"
 
