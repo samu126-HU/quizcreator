@@ -104,7 +104,7 @@ const toggleDialog = (type: string, id?: number, name?: string) => {
         case "delete":
             switch (confirmationDialogOpen.value) {
                 case false && confirmationDialogId != undefined:
-                    // @ts-expect-error
+                    // @ts-expect-error We are making sure it is not undefined
                     confirmationDialogId = id;
                     confirmationDialogOpen.value = true;
                     break;
@@ -117,7 +117,7 @@ const toggleDialog = (type: string, id?: number, name?: string) => {
         case "edit":
             switch (editDialogOpen.value) {
                 case false:
-                    //@ts-expect-error
+                    //@ts-expect-error No error because correct handling done beforehand
                     editDialogData = [id, name];
                     editDialogOpen.value = true;
                     break;
