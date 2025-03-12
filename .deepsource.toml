@@ -1,9 +1,42 @@
 version = 1
 
-test_patterns = [
-  "app/**",
-  "resources/js/pages/**",
-  "routes/**"
+exclude_patterns = [
+  ".github/**",
+  "bootstrap/**",
+  "config/**",
+  "config/**",
+  "database/**",
+  "public/**",
+  "storage/**",
+  "tests/**",
+  ".deepsource.toml",
+  ".editorconfig",
+  ".env.example",
+  ".gitattributes",
+  ".gitignore.",
+  ".prettierignore",
+  ".prettierrc",
+  ".README.md",
+  "artisan",
+  "components.json",
+  "composer.lock",
+  "eslint.config.js",
+  "formkit.themne.ts",
+  "oldcomponnents.json",
+  "package-lock.json",
+  "package.json",
+  "phpunit.xml",
+  "tailwind.config.js",
+  "tsconfig.json",
+  "vite.config.ts",
+  "resources/css/**",
+  "resources/views/**",
+  "resources/js/components/**",
+  "resources/js/composables/**",
+  "resources/js/layouts/**",
+  "resources/js/lib/**",
+  "resources/js/types/**",
+  "resources/js/ssr.ts"
 ]
 
 [[analyzers]]
